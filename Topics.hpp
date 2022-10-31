@@ -2,7 +2,7 @@
 #include <vector>
 
 static std::vector<std::string> topics = {
-	"package manager", "distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player"
+	"package manager", "distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player", "matrix client"
 };
 
 static std::vector<std::string> question_words = {
@@ -18,7 +18,7 @@ static std::vector<std::string> most_questions = {
 };
 
 static std::vector<std::string> grade = {
-	"good", "bad", "easy to use", "difficult to use", "usable out of the box", "old", "new"
+	"good", "bad", "easy to use", "difficult to use", "usable out of the box", "old", "new", "relevant"
 };
 
 static std::vector<std::string> package_managers = {
@@ -111,4 +111,8 @@ static std::vector<std::string> music_players = {
 
 static std::vector<std::string> video_players = {
 	"Haruna", "MPlayer", "SMPlayer", "MPV", "VLC Media Player", "Dragon Player", "GNOME Videos", "Deepin Movie", "Clapper", "QMPlay2", "Parole", "Celluloid", "Kaffeine", "Xine Multimedia Engine"
+};
+
+static std::vector<std::string> matrix_clients = {
+	"Element", "Ditto Chat", "FluffyChat", "Hydrogen", "NeoChat", "Nio", "quadrix.chat", "SchildiChat", "Syphon", "Cinny", "Fractal", "gotktrix", "kazv", "Mirage", "Nheko", "Quaternion", "Seaglass", "Spectral"
 };

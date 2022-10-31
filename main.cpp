@@ -37,6 +37,7 @@ int main(int argc, char** argv)
 	topic_map["music player"] 			= music_players;
 	topic_map["video player"] 			= video_players;
 	topic_map["package manager"] 		= package_managers;
+	topic_map["matrix client"] 			= matrix_clients;
 
 	int question_count = 1;
 	if (argc > 1)
@@ -47,7 +48,7 @@ int main(int argc, char** argv)
 		/* Pick a topic */
 		std::string topic = RandomElement(topics);
 
-		int question_type = RandomInt(0, 3);
+		int question_type = RandomInt(0, 6);
 		switch (question_type)
 		{
 			case (0):
@@ -61,8 +62,6 @@ int main(int argc, char** argv)
 
 			case (1):
 			{
-				int random_topic = RandomInt(0, 3);
-
 				/* Skip this question type if the topic happens to be "distro" */
 				if (topic == "distro")
 				{
@@ -83,6 +82,28 @@ int main(int argc, char** argv)
 			case (3):
 			{
 				std::cout << RandomElement(question_words) << " " << RandomElement(topics) << " " << RandomElement(most_questions) << "?" << std::endl;
+				break;
+			}
+
+			case (4):
+			{
+				std::string first_value = RandomElement(topic_map[topic]);
+				std::string second_value = RandomElement(topic_map[topic], first_value);
+				std::cout << "What is the difference between " << first_value << " and " << second_value << "?" << std::endl;
+				break;
+			}
+
+			case (5):
+			{
+				std::string first_value = RandomElement(topic_map[topic]);
+				std::string second_value = RandomElement(topic_map[topic], first_value);
+				std::cout << "Should I use " << first_value << " or " << second_value << "?" << std::endl;
+				break;
+			}
+
+			case (6):
+			{
+				std::cout << "Should I use Steam Proton version " << RandomInt(1, 9) << "." << RandomInt(0, 9) << " or " << RandomInt(1, 9) << "." << RandomInt(0, 9) << "?" << std::endl;
 				break;
 			}
 
