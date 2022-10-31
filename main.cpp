@@ -38,6 +38,7 @@ int main(int argc, char** argv)
 	topic_map["video player"] 			= video_players;
 	topic_map["package manager"] 		= package_managers;
 	topic_map["matrix client"] 			= matrix_clients;
+	topic_map["text editor"] 			= text_editors;
 
 	int question_count = 1;
 	if (argc > 1)

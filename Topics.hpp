@@ -2,7 +2,7 @@
 #include <vector>
 
 static std::vector<std::string> topics = {
-	"package manager", "distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player", "matrix client"
+	"package manager", "distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player", "matrix client", "text editor"
 };
 
 static std::vector<std::string> question_words = {
@@ -115,4 +115,8 @@ static std::vector<std::string> video_players = {
 
 static std::vector<std::string> matrix_clients = {
 	"Element", "Ditto Chat", "FluffyChat", "Hydrogen", "NeoChat", "Nio", "quadrix.chat", "SchildiChat", "Syphon", "Cinny", "Fractal", "gotktrix", "kazv", "Mirage", "Nheko", "Quaternion", "Seaglass", "Spectral"
+};
+
+static std::vector<std::string> text_editors = {
+	"Sublime Text", "Vim", "Nano Editor", "Atom", "Gedit", "Visual Studio Code", "GNU Emacs", "Notepadqq", "Brackets", "Bluefish", "Geany", "gVim", "Neovim", "Pico", "Lime Text", "Kate", "JED Editor", "Leafpad", "Light Table", "Medit", "Kakoune", "Micro Text Editor"
 };
