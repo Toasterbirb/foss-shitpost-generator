@@ -85,7 +85,7 @@ static std::vector<std::string> distros = {
 	"Zenwalk", "ZipSlack", "Zorin OS", "antiX", "elementary OS",
 	"fli4l", "gLinux", "gNewSense", "gOS",
 	"grml", "paldo", "postmarketOS", "rPath",
-	"tomsrtbt",
+	"tomsrtbt", "GNU Emacs",
 	"Windows 95", "Windows 98", "Windows ME", "Windows 2000", "Windows XP", "Windows Vista", "Windows 7", "Windows 8", "Windows 8.1", "Windows 9", "Windows 10", "Windows 11", "Windows 12"
 };
 
