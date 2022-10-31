@@ -36,6 +36,7 @@ int main(int argc, char** argv)
 	topic_map["terminal emulator"] 		= terminal_emulators;
 	topic_map["music player"] 			= music_players;
 	topic_map["video player"] 			= video_players;
+	topic_map["package manager"] 		= package_managers;
 
 	int question_count = 1;
 	if (argc > 1)

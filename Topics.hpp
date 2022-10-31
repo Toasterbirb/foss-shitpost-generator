@@ -2,7 +2,7 @@
 #include <vector>
 
 static std::vector<std::string> topics = {
-	"distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player"
+	"package manager", "distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player"
 };
 
 static std::vector<std::string> question_words = {
@@ -19,6 +19,10 @@ static std::vector<std::string> most_questions = {
 
 static std::vector<std::string> grade = {
 	"good", "bad", "easy to use", "difficult to use", "usable out of the box", "old", "new"
+};
+
+static std::vector<std::string> package_managers = {
+	"snap", "flatpak", "appimage", "dpkg", "entropy", "homebrew", "ipkg", "netpkg", "nix", "pacman", "petget", "PISI", "pkgsrc", "rpm", "apt", "slackpkg", "slapt-get", "swaret", "windows store", "cygwin"
 };
 
 static std::vector<std::string> distros = {
