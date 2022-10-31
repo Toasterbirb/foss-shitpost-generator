@@ -2,7 +2,7 @@
 #include <vector>
 
 static std::vector<std::string> topics = {
-	"distro", "desktop environment", "window manager", "shell", "terminal emulator"
+	"distro", "desktop environment", "window manager", "shell", "terminal emulator", "music player", "video player"
 };
 
 static std::vector<std::string> question_words = {
@@ -82,6 +82,7 @@ static std::vector<std::string> distros = {
 	"fli4l", "gLinux", "gNewSense", "gOS",
 	"grml", "paldo", "postmarketOS", "rPath",
 	"tomsrtbt",
+	"Windows 95", "Windows 98", "Windows ME", "Windows 2000", "Windows XP", "Windows Vista", "Windows 7", "Windows 8", "Windows 8.1", "Windows 9", "Windows 10", "Windows 11", "Windows 12"
 };
 
 static std::vector<std::string> desktop_environments = {
@@ -98,4 +99,12 @@ static std::vector<std::string> shells = {
 
 static std::vector<std::string> terminal_emulators = {
 	"Terminator", "Tilda", "Guake", "Yakuake", "ROXTerm", "Eterm", "Rxvt", "Tilix", "LXTerminal", "Konsole", "Kitty", "st", "Gnome-Terminal", "xfce4-terminal", "Terminology", "Deepin Terminal", "xterm", "LilyTerm", "Sakura", "Extraterm", "DomTerm", "TermKit", "alacritty", "termite", "Windows terminal"
+};
+
+static std::vector<std::string> music_players = {
+	"MPV", "Amberol", "Elisa", "Rythmbox", "Sayonara Player", "Strawberry Music Player", "DeaDBeef Player", "cmus", "VLC Media Player", "Museeks", "Audacious"
+};
+
+static std::vector<std::string> video_players = {
+	"Haruna", "MPlayer", "SMPlayer", "MPV", "VLC Media Player", "Dragon Player", "GNOME Videos", "Deepin Movie", "Clapper", "QMPlay2", "Parole", "Celluloid", "Kaffeine", "Xine Multimedia Engine"
 };

@@ -29,11 +29,13 @@ int main(int argc, char** argv)
 
 	/* Map topics to arrays */
 	std::map<std::string, std::vector<std::string>> topic_map;
-	topic_map["distro"] = distros;
-	topic_map["desktop environment"] = desktop_environments;
-	topic_map["window manager"] = tiling_window_managers;
-	topic_map["shell"] = shells;
-	topic_map["terminal emulator"] = terminal_emulators;
+	topic_map["distro"] 				= distros;
+	topic_map["desktop environment"] 	= desktop_environments;
+	topic_map["window manager"] 		= tiling_window_managers;
+	topic_map["shell"] 					= shells;
+	topic_map["terminal emulator"] 		= terminal_emulators;
+	topic_map["music player"] 			= music_players;
+	topic_map["video player"] 			= video_players;
 
 	int question_count = 1;
 	if (argc > 1)
@@ -59,23 +61,15 @@ int main(int argc, char** argv)
 			case (1):
 			{
 				int random_topic = RandomInt(0, 3);
-				std::string software_topic;
-				switch (random_topic)
+
+				/* Skip this question type if the topic happens to be "distro" */
+				if (topic == "distro")
 				{
-					case (0):
-						software_topic = "desktop environment";
-						break;
-
-					case(1):
-						software_topic = "window manager";
-
-					case(2):
-						software_topic = "shell";
-
-					case(3):
-						software_topic = "terminal emulator";
+					--i;
+					continue;
 				}
-				std::cout << "When will " << RandomElement(desktop_environments) << " version " << RandomInt(0, 9) << "." << RandomInt(0, 9) << "." << RandomInt(0, 9) << " be in " << RandomElement(distros) << " repositories?" << std::endl;
+
+				std::cout << "When will " << RandomElement(topic_map[topic]) << " version " << RandomInt(0, 9) << "." << RandomInt(0, 9) << "." << RandomInt(0, 9) << " be in " << RandomElement(distros) << " repositories?" << std::endl;
 				break;
 			}
 
