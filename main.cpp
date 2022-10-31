@@ -48,7 +48,7 @@ int main(int argc, char** argv)
 		/* Pick a topic */
 		std::string topic = RandomElement(topics);
 
-		int question_type = RandomInt(0, 6);
+		int question_type = RandomInt(0, 7);
 		switch (question_type)
 		{
 			case (0):
@@ -104,6 +104,14 @@ int main(int argc, char** argv)
 			case (6):
 			{
 				std::cout << "Should I use Steam Proton version " << RandomInt(1, 9) << "." << RandomInt(0, 9) << " or " << RandomInt(1, 9) << "." << RandomInt(0, 9) << "?" << std::endl;
+				break;
+			}
+
+			case (7):
+			{
+				std::string first_value = RandomElement(distros);
+				std::string second_value = RandomElement(distros, first_value);
+				std::cout << RandomElement(question_words) << " distro has the best kernel? " << first_value << " or " << second_value << "?" << std::endl;
 				break;
 			}
 
