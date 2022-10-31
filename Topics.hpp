@@ -10,7 +10,7 @@ static std::vector<std::string> question_words = {
 };
 
 static std::vector<std::string> comparisons = {
-	"is better", "has more users", "has less users", "is more stable", "is less stable", "has more bugs", "has less bugs", "is more popular", "is worse", "is more configurable", "looks better", "has better documentation"
+	"is better", "has more users", "has less users", "is more stable", "is less stable", "has more bugs", "has less bugs", "is more popular", "is worse", "is more configurable", "looks better", "has better documentation", "has more features", "gets more updates", "has better performance", "uses less ram", "is more bloated", "is more lightweight", "has less bloat"
 };
 
 static std::vector<std::string> most_questions = {
